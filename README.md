@@ -41,45 +41,38 @@ This workflow is built for busy professionals, freelancers, and teams who want t
 - Google Workspace or Gmail account with API access enabled  
 - Google Calendar API credentials  
 - Gmail API credentials  
-- AI model API key (Gemini, OpenAI, or other supported LLM)  
-
-## How to customize the workflow  
-- Swap out the AI model (Gemini, OpenAI, or another LLM).  
-- Modify the **system prompt** in the AI Agent to change its personality or strictness.  
-- Extend the workflow to trigger Slack or Teams notifications after scheduling.  
-- Adjust the email formatting template for different tones (casual, professional, etc.).  
-- Add error-handling logic for more advanced use cases (e.g., auto-rescheduling).  
+- AI model API key (Gemini, OpenAI, or other supported LLM)    
 
 ## Tools
 
-### 🤖 AI Agent  
+### AI Agent  
 The “brain” of the workflow. Interprets your requests and chooses the right tool. Asks for clarification if details are missing and confirms before important actions.
 
-### 🧠 Google Gemini Chat Model (or any LLM)  
+### Google Gemini Chat Model (or any LLM)  
 The AI language model that powers the assistant. You can swap Gemini with OpenAI, Claude, or another model.
 
-### 📌 Simple Memory  
+### Simple Memory  
 Keeps short-term context of the last ~10 interactions so the agent remembers what “it” refers to in your requests.
 
-### 📧 Send a message in Gmail  
+### Send a message in Gmail  
 Sends emails from your Gmail account. Requires recipient, subject, and body. Generates clear, professional text.
 
-### 📥 Get many messages in Gmail  
+### Get many messages in Gmail  
 Checks your inbox. Can filter by timeframe or sender. Returns detailed summaries, not just one-liners.
 
-### 📅 Get many events in Google Calendar  
+### Get many events in Google Calendar  
 Lists your events for a chosen date range. Useful for “What’s on my schedule this week?”
 
-### ⏰ Date & Time  
+### Date & Time  
 Converts natural phrases like “tomorrow at 3 PM” into exact ISO date-time values.
 
-### ✅ Get availability in Google Calendar  
+### Get availability in Google Calendar  
 Checks if you’re free during a specific time slot. Prevents double-booking before scheduling.
 
-### 📝 Create an event in Google Calendar  
+### Create an event in Google Calendar  
 Schedules a new meeting. Adds title, start/end times, attendees, description, and Google Meet link.
 
-### ✏️ Update an event in Google Calendar  
+### Update an event in Google Calendar  
 Edits an existing meeting. Change time, attendees, or details without creating a new event.
 
 ## Example Prompt
@@ -164,3 +157,15 @@ When a user's request involves both scheduling a meeting and notifying the atten
     * `body`: "Hello,\n\nThis is an invitation to schedule '[Event Summary]' on [Date] at [Time]. Please check your calendar for the official Google Calendar invite.\n\nBest regards,"
 6.  **Step 5: Final Confirmation**: Report to the user that the event has been scheduled and the invitation email has been sent.
 ```
+## How to customize the workflow  
+- Swap out the AI model (Gemini, OpenAI, or another LLM).  
+- Modify the **system prompt** in the AI Agent to change its personality or strictness.  
+- Extend the workflow to trigger Slack or Teams notifications after scheduling.  
+- Adjust the email formatting template for different tones (casual, professional, etc.).  
+- Add error-handling logic for more advanced use cases (e.g., auto-rescheduling).
+
+## Contributions
+- Feel free to contribute or open issues.  
+- Contact: open an issue or PR in this repository if you need help.  
+
+
