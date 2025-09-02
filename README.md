@@ -37,7 +37,7 @@ This workflow is built for busy professionals, freelancers, and teams who want t
    - “What’s on my calendar next week?”  
 
 ## Requirements  
-- Self-hosted n8n instance  
+- A n8n instance  
 - Google Workspace or Gmail account with API access enabled  
 - Google Calendar API credentials  
 - Gmail API credentials  
